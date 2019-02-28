@@ -2,7 +2,7 @@
 \usepackage[top=30truemm, bottom=30truemm]{geometry}
 
 %draftの場合[dvipdfmx]を[draft]
-\usepackage[draft]{graphicx}
+\usepackage[dvipdfmx]{graphicx}
 \usepackage{newtxtext}
 \usepackage{layout}
 \usepackage{lineno}
@@ -26,13 +26,40 @@
 \begin{document}
 \linenumbers
 \begin{abstract}
-全部消して, やり直し
-もう一度、サマリーを書いてみる
-
-
 Studying the physics of experiments using common materials to simulate geological processes frequently provides novel ideas and insight that can be applied to natural phenomena.
 In this study, a physical system of a laboratory experiment that is assumed to be mathematically equivalent to volcanic eruption systems and its behaviors and physical processes are investigated.
 This study aims to obtain through a laboratory experiment such new insight and ideas that it would be difficult to find directly from field observation and mathematical modeling of volcanic systems.
+
+In this study, the physics of a pipe-chamber eruption experiment was investigated. 
+This experiment was inspired by a sugar syrup eruption experiment conducted as an exhibition during an institute open house. 
+The experimental system comprised a vertical pipe connected to a gas chamber where a constant gas flux was maintained in the gas chamber and the gas-liquid flow in the pipe.
+
+First, pressure changes in the chamber were investigated. Sawtooth wave-like pressure changes (STW) were observed during the constant gas supply. Similar waveforms have been observed as geodetic signals that are associated with repetitive explosive eruptions and Dome-building eruptions.
+Volcanic oscillations have been explained by flow-induced oscillation models that include a coupling between elastic capacitance and variable flow resistance.
+Behaviors of these systems have not been studied by laboratory experiments. 
+It was shown that the experimental system of this study was mathematically similar to the existing volcanic oscillation models.
+The chamber pressure changes and flows in the pipe in the experiment were comparable with magma chamber pressure changes and conduit flows in volcanic systems, regardless of differences in specific scales and flow structures.
+In the experiment, periodicity spontaneously varied in either non-periodic, bimodal or trimodal manners, even if the given experimental parameters such as the pipe-chamber geometry and gas influx were constant.
+These had not been expected from existing models of volcanic systems. 
+Finding such new phenomena is a significance of the lumped parameter model experiment of volcanic systems.
+As a result of the flow image analysis, it was concluded that the spontaneous periodicity fluctuations were caused by variations of flow structure in the pipe due to past gas emissions.
+I inferred that, in the actual volcanic systems, fall-back of ejected materials, dike collapse, or different depth of magma head could disturb periodicity of an eruption.
+
+Second, acoustic waves were measured at the top of the pipe in association with the chamber pressure oscillations and gas emissions.
+The acoustic waveforms were disturbed preceding that the flow structure in the pipe and the chamber pressure periodicity were disturbed.
+In general, the acoustic waveforms with the sawtooth wave-like pressure changes in the chamber had two characteristic frequency peaks. The peak frequencies were explained by two different resonance models.
+It was shown that the amplitude of the lower frequency band in the acoustic wave had good correlation with the sawtooth wave amplitude in the chamber.
+Although the mechanisms of acoustic wave generation in this experiment and those in volcanic systems have not sufficiently linked, this experimental results suggested a possibility to find a correlation between a particular component of infrasound and ground deformation observed in actual volcanic eruptions.
+
+Finally, relationships among ground deformation, infrasound, and video records during 2015 Sakurajima volcanic activity were investigated.
+The recurrence interval of sawtooth wave-like ground deformation was by far disturbed compared to the experimental results. It was not successful in finding a relation between successive events that was comparable with the experimental system.
+The main finding was that the correlation between the sawtooth wave amplitude of ground deformation and the cumulative energies of small infrasound signals during the individual ash eruption events. It was suggested that the infrasound energy would be a useful parameter for monitoring eruptive volcanic activity.
+                
+In this study, I have not completed updating volcanic models based on insights and ideas obtained from experiments.
+On the other hand, showing the mathematical similarity between the experiment and volcanic eruption systems, finding disturbed periodicity and the correlation between a particular resonance model of infrasound and chamber pressure were important results. 
+They were unique outcomes of a model experiment of volcanic systems. 
+The obtained relationship between infrasound and ground deformation at Sakurajima was found as a result of reviewing and analyzing the observational data applying insights from the laboratory experiment.
+Based on the above results, this experimental system may provide a useful tool for understanding volcanic eruption system.
 \end{abstract} 
 
 
@@ -141,6 +168,117 @@ Disturbed STW について, チャンバー圧力と空振記録の時間変化�
 
 Fig. \ref{PAPCall}a, bに, それぞれの圧力変動パターンにおいて発生する空気振動パルスに関して, 生波形の振幅と, 高周波帯 (50 Hz >), 低周波帯 (50 Hz <) にバンドパスフィルターをかけた場合の振幅との関係を示す. 計測した空気振動パルスの生波形振幅は, 高周波帯のシグナルの振幅を表しており (Fig. \ref{PAPCall}b), 生波形振幅と低周波帯振幅は全く関係がない (Fig. \ref{PAPCall}a). 
 
+\clearpage
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1] {MonoPAtime.png} 
+\caption[チャンバー圧力と空気振動: Unimodal STW]
+{チャンバー圧力と空気振動 (Unimodal STW): 上段 チャンバー圧力波形, 下段: 空気振動波形, 下段の赤○マーカーは, 急激な圧力減少がトリガされた時間.}
+\label{MonoPAtime}
+\end{center}
+\end{figure} 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1] {Monowaveform.png} 
+\caption[代表的波形と周波数構造: Unimodal STW]
+{代表的波形と周波数構造: Unimodal STW. (a) の波形は高周波成分しか持たない高周波パルス (b, c). (d) の波形は高周波成分と低周波成分を持つ低周波パルス (e, f).}
+\label{Monowaveform}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1] {Monopspec.png} 
+\caption[イベント毎のスペクトル構造: Unimodal STW]
+{イベント毎のスペクトル構造 (Unimodal STW): 圧力急減少の有無を問わずに, 空気振動パルスの最大振幅が 1 Pa以上になるようなパルスをトリガした. 縦軸は周波数, 横軸はパルスイベントに並べてあり, 20 Hz付近のピークの大きさでソート.}
+\label{Monopspec}
+\end{center}
+\end{figure} 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1] {FlctPAtime.png} 
+\caption[チャンバー圧力と空気振動: Small fluctuation]
+{チャンバー圧力と空気振動: Small fluctuation, Fig. \ref{MonoPAtime}のキャプションを参照}
+\label{FlctPAtime}
+\end{center}
+\end{figure} 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1] {Flctwaveform.png} 
+\caption[代表的波形と周波数構造: Small fluctuation]
+{代表的波形と周波数構造: Small fluctuation}
+\label{Flctwaveform}
+\end{center}
+\end{figure} 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1] {Flctpspec.png} 
+\caption[イベント毎のスペクトル構造: Small fluctuation]
+{イベント毎のスペクトル構造: Small fluctuation, Fig. \ref{Monopspec}のキャプションを参照}
+\label{Flctpspec}
+\end{center}
+\end{figure} 
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1] {DistPAtime.png} 
+\caption[チャンバー圧力と空気振動: Disturbed STW]
+{チャンバー圧力と空気振動: Disturbed STW, Fig. \ref{MonoPAtime}のキャプションを参照}
+\label{DistPAtime}
+\end{center}
+\end{figure} 
+
+\begin{landscape}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1] {Distwaveform.png} 
+\caption[代表的波形と周波数構造: Disturbed STW]
+{代表的波形と周波数構造: Disturbed STW 発生時の代表的波形; (a, b) 高周波パルス, (c-h) 低周波パルス; (c, d) Type 1; (e, f) Type 2; (g, h) Type 3}
+\label{Distwaveform}
+\end{center}
+\end{figure} 
+\end{landscape}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1] {Distpspec.png} 
+\caption[イベント毎のスペクトル構造: Disturbed STW]
+{イベント毎のスペクトル構造: Disturbed STW, Fig. \ref{Monopspec}のキャプションを参照}
+\label{Distpspec}
+\end{center}
+\end{figure} 
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1] {QVA.png} 
+\caption[実験パラメータと空気振動振幅]
+{実験パラメータ ($V_\mathrm{c}$, $Q_\mathrm{in}$) と空気振動振幅: マーカーは $Q_\mathrm{in}$ の違いを表す. 凡例の単位は cm$^3$/s.}
+\label{QVA}
+\end{center}
+\end{figure} 
+
+
+
+
+
+
+\begin{landscape}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1] {PAPCall.png} 
+\caption[空気振動とチャンバー圧力振幅比較]
+{空気振動とチャンバー圧力振幅比較: a1-e1は Unimodal STW, a2-e2は Disturbed STWの結果を示す. 空気振動はチャンバー圧力急減と対応する低周波パルスの振幅を示す. Rはそれぞれのパラメータの相関係数. (a, b) 空気振動生波形振幅 $P_{AC}$と, 空気振動の低周波帯 ( < 50 Hz)振幅 (a), 高周波帯 (> 50 Hz) 振幅 (b). (c, d, e) チャンバー圧力振幅 ($\Delta P_{ch}$) と, 空気振動生波形振幅 ($P_{AC}$, c), 低周波帯振幅 (< 50 Hz, d), 高周波帯振幅 (> 50 Hz, e)の比較}
+\label{PAPCall}
+\end{center}
+\end{figure} 
+\end{landscape}
 
 
 
